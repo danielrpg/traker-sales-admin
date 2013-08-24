@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Traker App</title>
+    <title>Traker Admin</title>
     <!-- Mobile Specific Metas -->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="component/tuktuk.css">
     <link rel="stylesheet" href="component/tuktuk.theme.css">
@@ -105,35 +106,16 @@
         </header>
         <article class="padding scroll">
             <div class="margin-bottom">
-                <h4 class="text book inline"><span class="icon star color theme "></span> Featured</h4>
+                <h4 class="text book inline"><span class="icon star color theme "></span> MAPA</h4>
                 <nav class="inline on-right">
                     <a href="#" class="button secondary small"><span class="icon search"></span>Search</a>
                     <a href="#" class="button small"><span class="icon envelope"></span>Send</a>
                 </nav>
             </div>
             <div class="inline">
-                <div class="column_4 thumb bck light">thumb</div>
-                <div class="column_4 thumb bck light">thumb</div>
-            </div>
-
-            <div class="margin-bottom">
-                <h4 class="text book inline"><span class="icon group color theme"></span> Friends</h4>
-                <nav class="inline on-right">
-                    <a href="#" class="button secondary small"><span class="icon search"></span>Search</a>
-                </nav>
-            </div>
-            <div class="inline">
-                <div class="column_2 thumb bck light">thumb</div>
-                <div class="column_2 thumb bck light">thumb</div>
-                <div class="column_2 thumb bck light">thumb</div>
-                <div class="column_2 thumb bck light">thumb</div>
-                <div class="column_2 thumb bck light">thumb</div>
-                <div class="column_2 thumb bck light">thumb</div>
-                <div class="column_2 thumb bck light">thumb</div>
-                <div class="column_2 thumb bck light">thumb</div>
-                <div class="column_2 thumb bck light">thumb</div>
-                <div class="column_2 thumb bck light">thumb</div>
-                <div class="column_2 thumb bck light">thumb</div>
+                <div class="column_12 thumb bck light" id="id_mapa_geo">
+                    
+                </div>
             </div>
         </article>
 
@@ -177,11 +159,8 @@
         </footer>
     </div>
 
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="component/jquery.js"></script>
     <script src="component/tuktuk.js"></script>
-    <script>
-        TukTuk.Modal.loading();
-        setTimeout( TukTuk.Modal.hide, 1000);
-    </script>
+    <script src="app/App.js"></script>
 </body>
 </html>
