@@ -1,6 +1,6 @@
 TukTuk.Modal.loading();
 setTimeout( TukTuk.Modal.hide, 1000);
-var url = "http://localhost:3000/";
+var url = "http://10.0.0.4:3000/";
 var map;
 $(document).on('ready', App(TukTuk));
 function App(tuk, undefined){
